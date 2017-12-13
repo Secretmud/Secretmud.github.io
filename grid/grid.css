@@ -30,8 +30,8 @@
 
 .box:nth-child(4) {
     background: lightblue;
-    grid-row: /5;
-    grid-column: 3/4;
+    grid-row: 6/5;
+    grid-column: 3/6;
 }
 
 .box:nth-child(5) {
@@ -41,7 +41,8 @@
 
 .box:nth-child(6) {
     background: pink;
-    grid-row: 6/3;
+    grid-row: 3/5;
+    grid-column: 4/5
 }
 
 .box:nth-child(7) {
@@ -51,5 +52,5 @@
 
 .box:nth-child(8) {
     background: cyan;
-    grid-row: 6/5;
+    grid-row: 4/5;
 }
