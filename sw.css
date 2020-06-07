@@ -1,0 +1,35 @@
+html {
+	height: 100vh;
+	width: 100vw;
+	background: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fipack.info%2Fwp-content%2Fuploads%2F2015%2F11%2Fstar-sky-video-background.jpg&f=1&nofb=1");
+	background-size: 100vh 100vw;
+}
+body {
+	text-align: center;
+	background: none;
+	position: relative;
+	color: yellow;
+	animation: sw 8s infinite;
+	display: grid;
+	margin: auto;
+}
+h1:before {
+	content: "It is a dark time for the Rebellion. Although the Death Star has been destroyed, Imperial troops have driven the Rebel forces from their hidden base and pursued them across the galaxy.";
+}
+h1 {
+	display: grid;
+}
+
+li {
+	display: none;
+}
+
+h1 > a {
+	text-decoration: none;
+	color: yellow;
+}
+
+@keyframes sw {
+  0% { top: 100%; width: 50%; font-size: 1em}
+  100% { top: 0%; width: 0%; font-size: 0.0em}
+}
