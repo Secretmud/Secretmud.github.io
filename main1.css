@@ -1,0 +1,41 @@
+html {
+	height: 100vh;
+	width: 100vw;
+
+}
+body {
+	text-align: center;
+	background: none;
+	position: relative;
+	color: yellow;
+	animation: shake 3s infinite;
+	background: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fipack.info%2Fwp-content%2Fuploads%2F2015%2F11%2Fstar-sky-video-background.jpg&f=1&nofb=1");
+	background-size: 100vh 100vw;
+}
+h1, h1 > a, h2, h3, ul, li > a {
+	font-size: 10px;
+}
+h1 {
+	display: grid;
+}
+
+li {
+	list-style: none;
+	text-decoration: none;
+	text-align: center;
+	margin: auto;
+}
+
+@keyframes shake {
+  0% { transform: translate(18px, 165px) rotate(940deg); }
+  10% { transform: translate(-31px, -28px) rotate(-421deg); }
+  20% { transform: translate(-32px, 60px) rotate(811deg); }
+  30% { transform: translate(31px, 2px) rotate(970deg); }
+  40% { transform: translate(71px, -16px) rotate(31deg); }
+  50% { transform: translate(-31px, 12px) rotate(-421deg); }
+  60% { transform: translate(-63px, 18px) rotate(910deg); }
+  70% { transform: translate(3px, 81px) rotate(-516deg); }
+  80% { transform: translate(-176px, -91px) rotate(413deg); }
+  90% { transform: translate(1px, 20px) rotate(10deg); }
+  100% { transform: translate(18px, 165px) rotate(-423deg); }
+}
