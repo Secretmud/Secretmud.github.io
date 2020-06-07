@@ -8,8 +8,7 @@ body {
 	text-align: center;
 	background: none;
 	position: relative;
-	color: yellow;
-	animation: sw 8s infinite;
+	animation: sw 15s infinite;
 	display: grid;
 	margin: auto;
 }
@@ -26,6 +25,11 @@ li {
 
 h1 > a {
 	text-decoration: none;
+}
+
+* {
+	text-decoration: none;
+	list-style: none;
 	color: yellow;
 }
 
