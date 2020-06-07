@@ -1,3 +1,7 @@
+:root {
+	counter-reset: clickme;
+}
+
 body {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -19,11 +23,24 @@ h2 {
 	position: relative;
 	top: 5%;
 	left: 5%;
-	display: flex;
+	display: grid;
 	flex-direction: row;
 	width: 100%;
 	z-index: 1;
 	color: purple;
+}
+
+h2:before {
+	content: "---------";
+}
+
+h2:after {
+	content: "";
+	animation-name: countme;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	color: orange;
+	justify-content: center;
 }
 
 h3 {
@@ -42,12 +59,6 @@ ul {
 	background: white;
 	height: 50vh;
 	border: 5px solid blue;
-}
-
-li {
-	width: 50%;
-	list-style: none;
-	animation:
 }
 
 ul {
@@ -76,6 +87,26 @@ ul > li:nth-child(odd) {
 	animation-name: even;
 	animation-duration: 4s;
 	animation-iteration-count: infinite;
+}
+
+ul {
+  counter-reset: section;
+  list-style-type: none;
+}
+
+li::after {
+  content: "-------------";
+  color: hotpink;
+}
+
+li {
+	display: grid;
+	justify-content: center;
+}
+
+li::before {
+  content: "-------------";
+  color: hotpink;
 }
 
 a {
@@ -167,21 +198,73 @@ a {
 	0% {
 		color: red;
 		font-size: 1em;
+		transform: rotate3d(1, 1, 1, 40deg);
 	}
 	25% {
 		color: orange;
 		font-size: 2em;
+		transform: rotate3d(1, 1, 1, 10deg);
 	}
 	50% {
 		color: blue;
 		font-size: 1.15em;
+		transform: rotate3d(1, 1, 1, 100deg);
 	}
 	75% {
 		color: indigo;
 		font-size: 2em;
+		transform: rotate3d(1, 1, 1, 10deg);
 	}
 	100% {
 		color: violet;
 		font-size: 1em;
+		transform: rotate3d(1, 1, 1, 40deg);
 	}
+}
+
+@keyframes countme {
+	0%  {
+		content: "SUBSCRIBE";
+		text-decoration: line-through;
+		}
+	10% {
+		content: "EBIRCSBUS";
+		text-decoration: line-through;
+		}
+	20% {
+		content: "SUBSCRIBE";
+		text-decoration: line-through;
+		}
+	30% {
+		content: "EBIRCSBUS";
+		text-decoration: line-through;
+		}
+	40% {
+		content: "SUBSCRIBE";
+		text-decoration: overline;
+		}
+	50% {
+		content: "EBIRCSBUS";
+		text-decoration: line-through overline;
+		}
+	60% {
+		content: "SUBSCRIBE";
+		text-decoration: overline underline;
+		}
+	70% {
+		content: "EBIRCSBUS";
+		text-decoration: overline;
+		}
+	80% {
+		content: "SUBSCRIBE";
+		text-decoration: line-through;
+		}
+	90% {
+		content: "EBIRCSBUS";
+		text-decoration: overline line-through underline;
+		}
+	100% {
+		content: "SUBSCRIBE";
+		text-decoration: underline;
+		}
 }
