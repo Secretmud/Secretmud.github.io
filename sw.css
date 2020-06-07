@@ -11,6 +11,7 @@ body {
 	animation: sw 15s infinite;
 	display: grid;
 	margin: auto;
+	overflow: hidden;
 }
 h1:before {
 	content: "It is a dark time for the Rebellion. Although the Death Star has been destroyed, Imperial troops have driven the Rebel forces from their hidden base and pursued them across the galaxy.";
