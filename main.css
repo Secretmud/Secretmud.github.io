@@ -55,24 +55,96 @@ li {
 	animation:
 }
 
-@keyframes example {
+@keyframes hop {
 	0% {
-		top: 0%
+		top: 0%;
+		background: #321303;
 	}
 	50% {
 		top: 100%;
+		background: #000000;
+	}
+	100% {
+		top: 0%;
+		background: #aeaeae;
+	}
+}
+
+ul {
+	position: relative;
+	width: 80%;
+	height: 100%;
+	background-color: red;
+	animation-name: hop;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+ul > li:nth-child(even) {
+	position: relative;
+	width: 80%;
+	height: 100%;
+	animation-name: odd;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+ul > li:nth-child(odd) {
+	position: relative;
+	width: 80%;
+	height: 100%;
+	animation-name: even;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+	animation-name: ani_color;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes odd {
+	0% {
+		top: 50%;
+	}
+	50% {
+		top: 0%;
+	}
+	100% {
+		top: 50%;
+	}
+}
+
+@keyframes even {
+	0% {
+		top: 0%;
+	}
+	50% {
+		top: 80%;
 	}
 	100% {
 		top: 0%;
 	}
 }
 
-ul:nth-child(n+1) {
-	position: relative;
-	width: 80%;
-	height: 100%;
-	background-color: red;
-	animation-name: example;
-	animation-duration: 4s;
-	animation-iteration-count: infinite;
+@keyframes ani_color {
+	0% {
+		color: red;
+	}
+	25% {
+		color: orange;
+	}
+	50% {
+		color: blue;
+	}
+	75% {
+		color: indigo;
+	}
+	100% {
+		color: violet;
+	}
 }
+
