@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+h1,
+h2,
+h3,
+table,
+ul {
+    height: 100%;
+    width: 100%;
+}
+
+html {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+}
+
+body {
+    width: 30vh;
+    height: 30vh;
+    transform-style: preserve-3d;
+    transform: rotateX(-22deg) rotateY(-38deg) rotateZ(0deg);
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease-in-out;
+    animation: cubeRotation 5s infinite;
+}
+
+body>h1,
+h2,
+h3,
+table,
+ul,
+ul:after {
+    position: absolute;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    width: 30vh;
+    height: 30vh;
+    float: left;
+    overflow: hidden;
+    opacity: 1;
+}
+
+h1 {
+    transform: rotatex(90deg) translateX(0px) translateY(0px) translateZ(15vh);
+    background-color: #FFF;
+}
+
+h2 {
+    transform: rotateY(-90deg) translateX(0px) translateY(0px) translateZ(15vh);
+    background-color: #ffaf1c;
+}
+
+h3 {
+    transform: translateX(0px) translateY(0px) translateZ(15vh);
+    background-color: #58d568;
+}
+
+table {
+    transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(15vh);
+    background-color: #ed3030;
+}
+
+ul {
+    transform: rotateY(180deg) translateX(0px) translateY(0px) translateZ(15vh);
+    background-color: #1c5ffe;
+}
+
+ul:after {
+    content: "easter egg";
+    transform: rotateX(-90deg) translateX(0px) translateY(0px) translateZ(15vh);
+    background-color: #f2f215;
+}
+
+@keyframes coob {
+    0% {
+        transform: rotateX(75deg) rotateY(0deg) rotateZ(0deg);
+    }
+
+    25% {
+        transform: rotateX(25deg) rotateY(-25deg) rotateZ(25deg);
+    }
+
+    50% {
+        transform: rotateX(-50deg) rotateY(-50deg) rotateZ(50deg);
+    }
+
+    75% {
+        transform: rotateX(-75deg) rotateY(-75deg) rotateZ(75deg);
+    }
+
+    100% {
+        transform: rotateX(75deg) rotateY(0deg) rotateZ(360deg);
+    }
+}
