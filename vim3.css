@@ -3,7 +3,6 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
-    font-size: 12px;
 }
 
 h1,
@@ -27,10 +26,8 @@ body {
     width: 30vh;
     height: 30vh;
     transform-style: preserve-3d;
-    transform: rotateX(30deg) rotateY(30deg) rotateZ(30deg);
     position: relative;
     transform-style: preserve-3d;
-    transition: all 0.5s ease-in-out;
     animation: cubeRotation 5s infinite;
 }
 
@@ -41,12 +38,11 @@ table,
 ul,
 figure {
     position: absolute;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
 	height: 100%;
 	width: 100%;
     float: left;
     overflow: hidden;
+	font-size: 1em;
     opacity: 0.7;
 }
 
@@ -94,18 +90,22 @@ figure {
 
 @keyframes cubeRotation {
     0% {
-        transform: rotate3d(1, 1, 1, 0.25turn);
+        transform: rotate3d(1, 0, 0.75, 0.25turn) translate3d(25vw, 15vh, 15vh);
+
     }
 	25% {
-		transform: rotate3d(0.75, 0.75, 1, 0.5turn)
+		transform: rotate3d(0, 0.75, 1, 0.76turn) translate3d(-10vw, 30vh, 25vh);
+
 	}
 	50% {
-		transform: rotate3d(1, 0.5, 0.5, 0.75turn);
+		transform: rotate3d(0, 1, 0.5, 0.65turn) translate3d(10vw, -25vw, 5vh);
+
 	}
 	75% {
-		transform: rotate3d(0.25, 1, 0.25, 1turn);
+		transform: rotate3d(0.25, 1, 0.25, 0.76turn) translate3d(-10vw, 30vh, 25vh);
+
 	}
 	100% {
-		transform: rotate3d(1, 0, 0.75, 0turn);
+		transform: rotate3d(1, 0, 0.75, 0.25turn) translate3d(25vw, 15vh, 15vh);
 	}
 }
