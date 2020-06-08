@@ -55,18 +55,18 @@ figure {
 }
 
 h3 {
-    transform: rotatex(90deg) translateX(0px) translateY(0px) translateZ(15vh);
+    transform: rotatex(90deg) translate3d(0px, 0px, 15vh);
     background-color: #FFF;
 }
 
 
 h2 {
-    transform: rotateY(-90deg) translateX(0px) translateY(0px) translateZ(15vh);
+    transform: rotateY(-90deg) translate3d(0px, 0px, 15vh);
     background-color: #ffaf1c;
 }
 
 h1 {
-    transform: translateX(0px) translateY(0px) translateZ(15vh);
+    transform: translate3d(0px, 0px,15vh);
     background-color: #58d568;
 	display: grid;
 }
@@ -77,18 +77,18 @@ h1:after {
 }
 
 table {
-    transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(15vh);
+    transform: rotateY(90deg) translate3d(0px, 0px, 15vh);
     background-color: #ed3030;
 }
 
 ul {
-    transform: rotateY(180deg) translateX(0px) translateY(0px) translateZ(15vh);
+    transform: rotateY(180deg) translate3d(0px, 0px, 15vh);
     background-color: #1c5ffe;
 }
 
 figure {
 	color: black;
-    transform: rotateX(-90deg) translateX(0px) translateY(0px) translateZ(15vh);
+    transform: rotateX(-90deg) translate3d(0px, 0px, 15vh);
     background-color: #f2f215;
 }
 
