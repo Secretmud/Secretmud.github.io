@@ -95,6 +95,10 @@ figure {
     animation: grow5 4s infinite;
 }
 
+audio {
+    width: 100%;
+}
+
 @keyframes cubeRotation {
     0% {
         transform: rotate3d(1, 0, 0.75, 0.25turn) translate3d(0px, 0px, 15vh);
