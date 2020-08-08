@@ -1,0 +1,49 @@
+body {
+  background: darkgrey;
+  margin: 0;
+  padding: 0;
+}
+
+.file_name {
+  display: grid;
+  margin: auto;
+  padding: 0;
+  background: darkgrey;
+  border: unset;
+  border-bottom: 1px solid black;
+  height: 2em;
+  font-size: 2em;
+  text-align: center;
+}
+
+.get {
+  display: grid;
+  grid-template-columns: repeat(9, auto);
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+
+}
+
+.perm,
+.bash {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  font-size: 3em;
+}
+
+
+.wrap {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.wrap>* {
+  padding: 5px;
+}
