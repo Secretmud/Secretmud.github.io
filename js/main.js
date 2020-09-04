@@ -31,13 +31,13 @@ function calcBin(numb_arr) {
   let sum = [];
   let index = 0;
   for (let y = 0; y < numb_arr.length; y+=3) {
-  	let power = 0;
+  	let power = 2;
     let tot = 0;
     for (let i = y; i < y+3; i++) {
     	if (numb_arr[i] == 1) {
       	tot += Math.pow(2, power);
       }
-      power++;
+      power--;
     }
     sum[index] = tot;
     index++;
